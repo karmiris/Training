@@ -17,6 +17,7 @@ git config  --global user.name “akash”
 git remote add origin https://token@github.com/karmiris/Training.git 
 
 git push -u origin main	
+git pull --all
 
 Generating token:
 Right icon click on setting 
