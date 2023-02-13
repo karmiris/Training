@@ -1,0 +1,5 @@
+https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28
+
+Download jar (mid of screen)
+
+In Eclipse, open project->properties->java build path->libraries->add external JARs
