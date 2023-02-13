@@ -1,0 +1,11 @@
+mysql -u root -p
+pass: Simplilearn
+
+show databases;
+use mysql;
+show tables;
+
+create database mydb;
+use mydb;
+
+
