@@ -1,3 +1,7 @@
+new course:
+Create new local folder> Run bash in it:
+git clone https://token@github.com/karmiris/Training.git 
+
 git --version 
 git init		: This command is use to make local repository as git local repository 
 git status		: This command is use to check the current status of local repository 
