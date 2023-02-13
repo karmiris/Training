@@ -22,3 +22,8 @@ Click on generate new token option
 vi welcome.java
 javac welcome.java
 java welcome    (welcome.class)
+
+db:
+mysql -u root -p
+Simplilearn
+
