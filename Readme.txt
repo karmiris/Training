@@ -3,6 +3,8 @@ git init		: This command is use to make local repository as git local repository
 git status		: This command is use to check the current status of local repository 
 git add filename        this command is use to add the file to staging area. 
 git add .  		This command is use to add all files or folder present in current location in staging area.
+git branch -m master main	To change branch name
+git branch
 git commit –m “commit message”;		you get error message if you are doing first time. 
 
 git config --global user.email “akash300383@gmail.com”
