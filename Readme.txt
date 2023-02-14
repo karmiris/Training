@@ -1,6 +1,10 @@
 new course:
 Create new local folder> Run bash in it:
-git clone https://token@github.com/karmiris/Training.git 
+git clone https://token@github.com/karmiris/Training.git 	// perhaps better without token (?)
+git remote add origin2 https://token@github.com/karmiris/Training.git 	// if new token created
+git push -u origin2 main	
+git pull -u origin2 main
+
 
 git --version 
 git init		: This command is use to make local repository as git local repository 
