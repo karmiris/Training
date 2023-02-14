@@ -5,6 +5,8 @@ git remote add origin2 https://token@github.com/karmiris/Training.git 	// if new
 git push -u origin2 main	
 git pull origin2 
 
+Instructor Git: 
+https://github.com/Kaleakash/vadafone_java_fullstack_2023_batch
 
 git --version 
 git init		: This command is use to make local repository as git local repository 
