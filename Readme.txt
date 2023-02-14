@@ -3,7 +3,7 @@ Create new local folder> Run bash in it:
 git clone https://token@github.com/karmiris/Training.git 	// perhaps better without token (?)
 git remote add origin2 https://token@github.com/karmiris/Training.git 	// if new token created
 git push -u origin2 main	
-git pull -u origin2 main
+git pull origin2 
 
 
 git --version 
