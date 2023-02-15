@@ -9,7 +9,7 @@ import com.service.EmployeeService;
 
 public class DemoMain {
 
-	public static void main(String[] args) {//	EmployeeService es = new EmployeeService();
+	public static void main(String[] args) { //	EmployeeService es = new EmployeeService();
 		Scanner sc = new Scanner(System.in);
 		EmployeeService es = new EmployeeService();
 		int choice;
@@ -68,8 +68,8 @@ public class DemoMain {
 			System.out.println("Do you want to continue?(yes/no)");
 		con = sc.next();
 		} while (con.equalsIgnoreCase("yes"));
-		System.out.println("Thank you!");
 		
+		System.out.println("Thank you!");
 		sc.close();
 	}
 }

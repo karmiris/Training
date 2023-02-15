@@ -58,7 +58,7 @@ public class EmployeeService {
 		Iterator<Employee> li = listOfEmp.iterator();
 		while(li.hasNext()) {
 			Employee emp = li.next();
-			emp.setSalary(emp.getSalary()+2000);
+			emp.setSalary(emp.getSalary()+2000); // temporary bonus
 		}
 		
         return listOfEmp;
