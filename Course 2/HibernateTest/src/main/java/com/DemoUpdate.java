@@ -5,10 +5,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class DemoTest {
-
+public class DemoUpdate {
+	
 	public static void main(String[] args) {
-		
 		try {
 			Configuration con = new Configuration();
 			con.configure("hibernate.cfg.xml");
@@ -18,19 +17,25 @@ public class DemoTest {
 			
 			Transaction tran = session.getTransaction();
 			
-			Employee emp = new Employee();
-			emp.setId(11);
-			emp.setName("Lex");
-			emp.setSalary(28000);
+			System.out.println("Update Query");
+			Employee emp = session.get(Employee.class, 54);
 			
-			tran.begin();
-			session.save(emp);	// Run insert
-			tran.commit();
-			System.out.println("Record added!");
-			
+			if (emp==null) {
+				System.out.println("Id not present");
+			}
+			else {
+				tran.begin();
+				emp.setSalary(2*emp.getSalary());
+				session.update(emp);	// Run update
+				tran.commit();
+				System.out.println("Record updated!");
+			}
+						
 		}
 		catch (Exception e) {
 			System.out.println(e);
 		}
+
 	}
+
 }

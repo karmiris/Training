@@ -5,10 +5,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class DemoTest {
+public class DemoDelete {
 
 	public static void main(String[] args) {
-		
 		try {
 			Configuration con = new Configuration();
 			con.configure("hibernate.cfg.xml");
@@ -18,19 +17,24 @@ public class DemoTest {
 			
 			Transaction tran = session.getTransaction();
 			
-			Employee emp = new Employee();
-			emp.setId(11);
-			emp.setName("Lex");
-			emp.setSalary(28000);
+			System.out.println("Delete Query");
+			Employee emp = session.get(Employee.class, 11);
 			
-			tran.begin();
-			session.save(emp);	// Run insert
-			tran.commit();
-			System.out.println("Record added!");
-			
+			if (emp==null) {
+				System.out.println("Id not present");
+			}
+			else {
+				tran.begin();
+				session.delete(emp);	// Run delete
+				tran.commit();
+				System.out.println("Record deleted!");
+			}
+						
 		}
 		catch (Exception e) {
 			System.out.println(e);
 		}
+
 	}
+
 }
