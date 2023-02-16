@@ -5,8 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class DemoUpdate {
-	
+public class DemoSelectOneLine {
+
 	public static void main(String[] args) {
 		try {
 			Configuration con = new Configuration();
@@ -25,11 +25,7 @@ public class DemoUpdate {
 				System.out.println("Id not present");
 			}
 			else {
-				tran.begin();
-				emp.setSalary(2*emp.getSalary());
-				session.update(emp);	// Run update
-				tran.commit();
-				System.out.println("Record updated!");
+				System.out.println(emp); // because of toString override in employee.java
 			}
 						
 		}
@@ -38,5 +34,4 @@ public class DemoUpdate {
 		}
 
 	}
-
 }

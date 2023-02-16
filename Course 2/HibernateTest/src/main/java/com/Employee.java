@@ -37,4 +37,10 @@ public class Employee {
 	public void setSalary (float salary) {
 		this.salary = salary;
 	}
+	
+	@Override
+	public String toString() { // allows element to be printed in a nice way
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
 }
