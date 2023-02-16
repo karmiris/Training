@@ -17,7 +17,7 @@ public class DemoSelectOneLine {
 			
 			Transaction tran = session.getTransaction();
 			
-			System.out.println("Update Query");
+			System.out.println("Select 1 query");
 			Employee emp = session.get(Employee.class, 54);
 				// select * from employee where id = 54;
 			
