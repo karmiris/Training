@@ -6,14 +6,15 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+//import javax.persistence.OneToOne;
+
 @Entity
 public class Trainer {		// map to trainer table 
 @Id
 private int tid;
 private String tname;
 private String tech;
-@OneToMany
+@OneToMany		// This list updates automatically!
 @JoinColumn(name = "tsid")		// this annotation is use to link fk in student table 
 private List<Student> listOfStd;			// trainer has more than one student
 //@OneToOne
