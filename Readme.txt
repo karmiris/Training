@@ -8,6 +8,10 @@ git pull origin2
 Instructor Git: 
 https://github.com/Kaleakash/vadafone_java_fullstack_2023_batch
 
+Getting Tomcat to work (Maven not working):
+https://stackoverflow.com/questions/4119448/the-import-javax-servlet-cant-be-resolved
+https://stackoverflow.com/questions/2869485/how-to-add-javadoc-for-servlet-api-in-eclipse
+
 git --version 
 git init		: This command is use to make local repository as git local repository 
 git status		: This command is use to check the current status of local repository 
